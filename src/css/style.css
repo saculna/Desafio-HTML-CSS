@@ -1,0 +1,146 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  background: url('../images/bg-desktop.svg') hsl(257, 40%, 49%) center center no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.logo {
+  margin: 40px;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 40px;
+  max-width: 1440px;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content .text {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.content .text h2 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 4.2rem;
+}
+
+.content .text p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 2.1rem;
+}
+
+.content .register {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 12px 60px;
+  color: rgb(103, 75, 175);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.content .register:hover {
+  background-color: rgb(232, 130, 232);
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  gap: 14px;
+  margin: 20px 40px;
+  font-size: 1.5rem;
+}
+
+.social a:hover {
+  color: rgb(232, 130, 232);
+  transition: 0.3s;
+  border-color: rgb(232, 130, 232);
+  cursor: pointer;
+}
+
+.fa-stack {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1025px) {
+  .content .text h2 {
+      font-size: 2.4rem;
+  }
+
+  .content .text p {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 938px) {
+  .container {
+      background: url('../images/bg-mobile.svg') hsl(257, 40%, 49%) center center no-repeat;
+      background-position: initial;
+      background-size: contain;
+  }
+
+  .logo {
+      width: 45%;
+  }
+
+  .content {
+      display: grid;
+  }
+
+  .content img {
+      width: 100%;
+  }
+
+  .content .text {
+      margin: 20px 0;
+      text-align: center;
+  }
+
+  .container .text h2 {
+      font-size: 2.8rem;
+  }
+
+  .content .text p {
+      font-size: 1.65rem;
+  }
+
+  .content .register {
+      font-size: 1.5rem;
+      padding: 10px 80px;
+  }
+
+  .social {
+      justify-content: center;
+      margin-top: 35px;
+  }
+}
